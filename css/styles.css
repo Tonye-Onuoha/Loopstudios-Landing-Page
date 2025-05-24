@@ -1,0 +1,220 @@
+/* STYLED WITH SASS */
+.alata-regular, footer .footer-content p, footer .footer-content ul li, main .container__projects-content .projects-content__options button, main .container__interactive-content .hero-content-details p {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.josefin-sans-font, .mobile-menu ul li, main .container__projects-content h2, main .container__projects-content .projects-content__title, main .container__interactive-content .hero-content-details h1, header .mobile-header .header__content h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+}
+
+.background-style, main .container__projects-content .card-8, main .container__projects-content .card-7, main .container__projects-content .card-6, main .container__projects-content .card-5, main .container__projects-content .card-4, main .container__projects-content .card-3, main .container__projects-content .card-2, main .container__projects-content .card-1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-size: 15px;
+  position: relative;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+}
+header .mobile-header {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  padding: 40px 20px 0 20px;
+  box-sizing: border-box;
+  background-image: url("../images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+header .mobile-header .header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .mobile-header .header__content {
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  margin: auto;
+  padding: 20px;
+  border: 2.5px solid hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+}
+header .desktop-header {
+  display: none;
+}
+
+main {
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+main .container {
+  width: 100%;
+}
+main .container__interactive-content {
+  width: 100%;
+  margin-top: 75px;
+}
+main .container__interactive-content .hero-content-background {
+  height: 300px;
+  background-image: url("../images/mobile/image-interactive.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main .container__interactive-content .hero-content-details {
+  padding: 35px 35px 0 35px;
+  text-align: center;
+}
+main .container__interactive-content .hero-content-details h1 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+main .container__interactive-content .hero-content-details p {
+  color: hsl(0, 0%, 50%);
+}
+main .container__projects-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, 150px);
+  grid-row-gap: 20px;
+}
+main .container__projects-content .projects-content__card {
+  height: 100%;
+}
+main .container__projects-content .projects-content__card {
+  position: relative;
+}
+main .container__projects-content .projects-content__title {
+  text-transform: uppercase;
+  text-align: center;
+  align-self: flex-end;
+  margin-bottom: 25px;
+}
+main .container__projects-content h2 {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  position: absolute;
+  height: fit-content;
+  left: 30px;
+  bottom: 30px;
+  font-size: 28px;
+}
+main .container__projects-content .card-1 {
+  background-image: url(../images/mobile/image-deep-earth.jpg);
+}
+main .container__projects-content .card-2 {
+  background-image: url(../images/mobile/image-night-arcade.jpg);
+}
+main .container__projects-content .card-3 {
+  background-image: url(../images/mobile/image-soccer-team.jpg);
+}
+main .container__projects-content .card-4 {
+  background-image: url(../images/mobile/image-grid.jpg);
+}
+main .container__projects-content .card-5 {
+  background-image: url(../images/mobile/image-from-above.jpg);
+}
+main .container__projects-content .card-6 {
+  background-image: url(../images/mobile/image-pocket-borealis.jpg);
+}
+main .container__projects-content .card-7 {
+  background-image: url(../images/mobile/image-curiosity.jpg);
+}
+main .container__projects-content .card-8 {
+  background-image: url(../images/mobile/image-fisheye.jpg);
+}
+main .container__projects-content .projects-content__options {
+  height: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+main .container__projects-content .projects-content__options button {
+  width: 50%;
+  padding: 15px 0;
+  border: 1px solid hsl(0, 0%, 0%);
+  text-transform: uppercase;
+  color: hsl(0, 0%, 0%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.mobile-menu {
+  width: 100%;
+  height: 100%;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  display: none;
+  flex-direction: column;
+  gap: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: hsl(0, 0%, 0%);
+}
+.mobile-menu .menu-close-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.mobile-menu ul li {
+  padding: 20px 0;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+}
+
+footer .footer-content {
+  padding: 50px 40px;
+  text-align: center;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+}
+footer .footer-content ul {
+  padding: 0;
+  margin: 30px 0;
+  list-style: none;
+}
+footer .footer-content ul li {
+  padding: 15px 0;
+}
+footer .footer-content .socials-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+footer .footer-content p {
+  margin-top: 20px;
+  color: hsl(0, 0%, 50%);
+}
+
+/*# sourceMappingURL=styles.css.map */
