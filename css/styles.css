@@ -89,8 +89,8 @@ main .container__interactive-content .hero-content-details {
   text-align: center;
 }
 main .container__interactive-content .hero-content-details h1 {
-  text-transform: uppercase;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 main .container__interactive-content .hero-content-details p {
   color: hsl(0, 0%, 50%);
@@ -109,19 +109,19 @@ main .container__projects-content .projects-content__card {
   position: relative;
 }
 main .container__projects-content .projects-content__title {
+  margin-bottom: 25px;
   text-transform: uppercase;
   text-align: center;
   align-self: flex-end;
-  margin-bottom: 25px;
 }
 main .container__projects-content h2 {
+  font-size: 28px;
   text-transform: uppercase;
-  color: hsl(0, 0%, 100%);
   position: absolute;
   height: fit-content;
   left: 30px;
   bottom: 30px;
-  font-size: 28px;
+  color: hsl(0, 0%, 100%);
 }
 main .container__projects-content .card-1 {
   background-image: url(../images/mobile/image-deep-earth.jpg);
@@ -196,8 +196,8 @@ main .container__projects-content .projects-content__options button {
 footer .footer-content {
   padding: 50px 40px;
   text-align: center;
-  background-color: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 0%);
 }
 footer .footer-content ul {
   padding: 0;
