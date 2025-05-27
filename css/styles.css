@@ -9,6 +9,7 @@
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
+  font-style: normal;
 }
 
 .background-style, main .container__projects-content .card-8, main .container__projects-content .card-7, main .container__projects-content .card-6, main .container__projects-content .card-5, main .container__projects-content .card-4, main .container__projects-content .card-3, main .container__projects-content .card-2, main .container__projects-content .card-1 {
@@ -86,6 +87,7 @@ main .container__interactive-content .hero-content-background {
 }
 main .container__interactive-content .hero-content-details {
   padding: 35px 35px 0 35px;
+  box-sizing: border-box;
   text-align: center;
 }
 main .container__interactive-content .hero-content-details h1 {
@@ -193,11 +195,13 @@ main .container__projects-content .projects-content__options button {
   color: hsl(0, 0%, 100%);
 }
 
+footer {
+  background-color: hsl(0, 0%, 0%);
+}
 footer .footer-content {
   padding: 50px 40px;
   text-align: center;
   color: hsl(0, 0%, 100%);
-  background-color: hsl(0, 0%, 0%);
 }
 footer .footer-content ul {
   padding: 0;
@@ -215,6 +219,237 @@ footer .footer-content .socials-container {
 footer .footer-content p {
   margin-top: 20px;
   color: hsl(0, 0%, 50%);
+}
+
+@media screen and (min-width: 900px) {
+  header .mobile-header {
+    display: none;
+  }
+  header .desktop-header {
+    position: relative;
+    display: block;
+    padding: 40px 75px;
+    height: 450px;
+    box-sizing: border-box;
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  header .desktop-header .header-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+  }
+  header .desktop-header .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .desktop-header .header__container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline;
+  }
+  header .desktop-header .header__container ul li {
+    display: inline;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(0, 0%, 100%);
+    padding: 10px 0;
+    margin-left: 35px;
+  }
+  header .desktop-header .header__container ul li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+  }
+  header .desktop-header .header__content {
+    width: 55%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2.5px solid hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+  }
+  header .desktop-header .header__content h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 45px;
+  }
+  main {
+    padding: 0 75px;
+  }
+  main .container__interactive-content {
+    position: relative;
+  }
+  main .container__interactive-content .hero-content-background {
+    width: 60%;
+    background-image: url(../images/desktop/image-interactive.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  main .container__interactive-content .hero-content-details {
+    min-width: 54%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 110px;
+    left: 45%;
+    padding: 40px;
+    background-color: hsl(0, 0%, 100%);
+  }
+  main .container__interactive-content .hero-content-details p {
+    font-size: 12.5px;
+  }
+  main .container__projects-content {
+    margin-top: 15px;
+  }
+  main .container__projects-content .projects-content__options button:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 0%);
+  }
+  main .container .projects-content__card {
+    background-position: top;
+  }
+  main .container .projects-content__card:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  main .container .projects-content__card:hover h2 {
+    color: hsl(0, 0%, 0%);
+  }
+}
+@media screen and (min-width: 1300px) {
+  header .desktop-header {
+    height: 650px;
+    padding: 0;
+  }
+  header .desktop-header .header-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 50px;
+    gap: 150px;
+  }
+  header .desktop-header .header-wrapper .header__content {
+    width: 57.5%;
+  }
+  header .desktop-header .header-wrapper .header__content h1 {
+    font-size: 55px;
+  }
+  main {
+    padding: 0;
+  }
+  main .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  main .container__interactive-content .hero-content-background {
+    height: 350px;
+  }
+  main .container__interactive-content .hero-content-details {
+    width: 560px;
+    padding: 60px;
+  }
+  main .container__projects-content {
+    margin: 75px 0;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 400px 400px;
+    grid-template-areas: "our-creations our-creations see-all see-all" "deep-earth night-arcade soccer-team the-grid" "above-vr pocket-borealis curiosity fisheye";
+    grid-gap: 20px;
+  }
+  main .container__projects-content .projects-content__title {
+    margin-bottom: 0;
+    grid-area: our-creations;
+    align-self: center;
+  }
+  main .container__projects-content .card-1 {
+    background-image: url(../images/desktop/image-deep-earth.jpg);
+    grid-area: deep-earth;
+  }
+  main .container__projects-content .card-2 {
+    background-image: url(../images/desktop/image-night-arcade.jpg);
+    grid-area: night-arcade;
+  }
+  main .container__projects-content .card-3 {
+    background-image: url(../images/desktop/image-soccer-team.jpg);
+    grid-area: soccer-team;
+  }
+  main .container__projects-content .card-4 {
+    background-image: url(../images/desktop/image-grid.jpg);
+    grid-area: the-grid;
+  }
+  main .container__projects-content .card-5 {
+    background-image: url(../images/desktop/image-from-above.jpg);
+    grid-area: above-vr;
+  }
+  main .container__projects-content .card-6 {
+    background-image: url(../images/desktop/image-pocket-borealis.jpg);
+    grid-area: pocket-borealis;
+  }
+  main .container__projects-content .card-7 {
+    background-image: url(../images/desktop/image-curiosity.jpg);
+    grid-area: curiosity;
+  }
+  main .container__projects-content .card-8 {
+    background-image: url(../images/desktop/image-fisheye.jpg);
+    grid-area: fisheye;
+  }
+  main .container__projects-content .projects-content__options {
+    grid-area: see-all;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  main .container__projects-content .projects-content__options button {
+    width: 30%;
+  }
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  footer .footer-content .footer-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  footer .footer-content .footer-menu ul {
+    margin: 0;
+    gap: 40px;
+  }
+  footer .footer-content .footer-menu ul li {
+    padding: 0;
+    padding-bottom: 10px;
+    display: inline;
+    margin-right: 40px;
+  }
+  footer .footer-content .footer-menu ul li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+  }
+  footer .footer-content .footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  footer .footer-content .footer-socials img:hover {
+    cursor: pointer;
+  }
+  footer .footer-content p {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
