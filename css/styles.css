@@ -21,7 +21,7 @@
 body {
   width: 100%;
   margin: 0;
-  font-size: 15px;
+  font-size: 0.9375em;
   position: relative;
 }
 
@@ -229,7 +229,7 @@ footer .footer-content p {
   color: hsl(0, 0%, 50%);
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 56.25em) {
   header .mobile-header {
     display: none;
   }
@@ -334,7 +334,7 @@ footer .footer-content p {
     color: brown;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 81.25em) {
   header .desktop-header {
     height: 650px;
     padding: 0;
