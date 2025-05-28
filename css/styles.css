@@ -68,6 +68,7 @@ header .desktop-header {
 
 main {
   width: 100%;
+  margin-top: 125px;
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -76,7 +77,6 @@ main .container {
 }
 main .container__interactive-content {
   width: 100%;
-  margin-top: 75px;
 }
 main .container__interactive-content .hero-content-background {
   height: 300px;
@@ -353,6 +353,7 @@ footer .footer-content p {
     font-size: 55px;
   }
   main {
+    margin-bottom: 125px;
     padding: 0;
   }
   main .container {
@@ -367,7 +368,7 @@ footer .footer-content p {
     padding: 60px;
   }
   main .container__projects-content {
-    margin: 75px 0;
+    margin-top: 75px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto 400px 400px;
     grid-template-areas: "our-creations our-creations see-all see-all" "deep-earth night-arcade soccer-team the-grid" "above-vr pocket-borealis curiosity fisheye";
@@ -376,7 +377,7 @@ footer .footer-content p {
   main .container__projects-content .projects-content__title {
     margin-bottom: 0;
     grid-area: our-creations;
-    align-self: center;
+    justify-self: flex-start;
   }
   main .container__projects-content .card-1 {
     background-image: url(../images/desktop/image-deep-earth.jpg);
